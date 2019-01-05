@@ -7,7 +7,7 @@ if (require.main === module) {
   // Run the application
   const config = {
     rest: {
-      port: 3002,
+      port: '3002',
       host: 'localhost',
       openApiSpec: {
         // useful when used with OASGraph to locate your application
