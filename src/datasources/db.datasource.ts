@@ -2,14 +2,14 @@ import {inject} from '@loopback/core';
 import {juggler} from '@loopback/repository';
 
 const config = {
-    "name": process.env.NAME,
-    "connector": process.env.CONNECTOR,
-    "url": "",
-    "host": process.env.HOSTNAME,
-    "port": process.env.PORT,
-    "user": process.env.USERNAME,
-    "password": process.env.PASSWORD,
-    "database": process.env.DB_NAME
+    "host": process.env.DB_HOSTNAME,
+    "user": process.env.DB_USERNAME,
+    "password": process.env.DB_PASSWORD,
+    "port": process.env.DB_PORT,
+    "database": process.env.DB_NAME,
+    "name": process.env.DB_INAME,
+    "connector": process.env.DB_CONNECTOR,
+    "url": ""
 }
 
 export class DbDataSource extends juggler.DataSource {
